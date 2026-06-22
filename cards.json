@@ -1,0 +1,110 @@
+[
+  {
+    "name": "송승훈",
+    "company": "T.M Link",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EC%86%A1%EC%8A%B9%ED%9B%88/",
+    "tier": "standard",
+    "category": "컨설팅",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "김지현",
+    "company": "감성온도",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EA%B9%80%EC%A7%80%ED%98%84/",
+    "tier": "standard",
+    "category": "기타",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "김경태",
+    "company": "늘곁애상조",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EA%B9%80%EA%B2%BD%ED%83%9C/",
+    "tier": "standard",
+    "category": "장례",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "김효정",
+    "company": "PM인터내셔널",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EA%B9%80%ED%9A%A8%EC%A0%95/",
+    "tier": "standard",
+    "category": "헬스",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "이화춘",
+    "company": "뷰티랩",
+    "role": "원장",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EC%9D%B4%ED%99%94%EC%B6%98/",
+    "tier": "premium",
+    "category": "뷰티",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "김준래",
+    "company": "무늬디자인",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EA%B9%80%EC%A4%80%EB%9E%98/index.html",
+    "tier": "standard",
+    "category": "디자인",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "박성준",
+    "company": "엘로이미디어",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EB%B0%95%EC%84%B1%EC%A4%80/index.html",
+    "tier": "standard",
+    "category": "미디어",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "박진호",
+    "company": "",
+    "role": "",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EB%B0%95%EC%A7%84%ED%98%B8/index.html",
+    "tier": "standard",
+    "category": "기타",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "정율채",
+    "company": "",
+    "role": "",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EC%A0%95%EC%9C%A8%EC%B1%84/index.html",
+    "tier": "standard",
+    "category": "기타",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "김정임",
+    "company": "",
+    "role": "",
+    "url": "https://jinjjabg-hub.github.io/NAMECARD/%EA%B9%80%EC%A0%95%EC%9E%84/",
+    "tier": "standard",
+    "category": "기타",
+    "chapter": "기타"
+  },
+  {
+    "name": "이서원",
+    "company": "웰슨트서원",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/NAMECARD/%EC%9D%B4%EC%84%9C%EC%9B%90/",
+    "tier": "premium",
+    "category": "헬스",
+    "chapter": "기타"
+  },
+  {
+    "name": "이지수",
+    "company": "",
+    "role": "",
+    "url": "https://jinjjabg-hub.github.io/NAMECARD/%EC%9D%B4%EC%A7%80%EC%88%98/",
+    "tier": "standard",
+    "category": "기타",
+    "chapter": "기타"
+  }
+]
