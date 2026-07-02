@@ -27,15 +27,6 @@
     "chapter": "BNI 파이오니어"
   },
   {
-    "name": "김효정",
-    "company": "PM인터내셔널",
-    "role": "대표",
-    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EA%B9%80%ED%9A%A8%EC%A0%95/",
-    "tier": "standard",
-    "category": "헬스",
-    "chapter": "기타"
-  },
-  {
     "name": "이화춘",
     "company": "뷰티랩",
     "role": "원장",
@@ -115,5 +106,14 @@
     "tier": "standard",
     "category": "제조",
     "chapter": "토파즈"
-  }
+  },
+  {
+    "name": "김효정",
+    "company": "PM인터내셔널",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EA%B9%80%ED%9A%A8%EC%A0%95/",
+    "tier": "standard",
+    "category": "헬스",
+    "chapter": "기타"
+  },
 ]
