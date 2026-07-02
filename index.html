@@ -321,7 +321,7 @@ function render() {
       (card.role && card.role.toLowerCase().includes(q));
 
     const matchFilter = activeFilter === 'all' ||
-      (activeFilter.startsWith('tier:') && card.tier === activeFilter.split(':')[1]) ||
+      (activeFilter.startsWith('tier:') && (card.tier || '').toLowerCase() === activeFilter.split(':')[1]) ||
       (activeFilter.startsWith('chapter:') && card.chapter === activeFilter.split(':')[1]) ||
       (activeFilter.startsWith('category:') && card.category === activeFilter.split(':')[1]);
 
@@ -345,7 +345,7 @@ function render() {
     <a class="dica-card" href="${card.url}" target="_blank">
       <div class="card-cover ${colors[i % colors.length]}">
         <div class="card-cover-char">${card.name.charAt(0)}</div>
-        <span class="card-tier-badge">${tierLabel[card.tier] || card.tier}</span>
+        <span class="card-tier-badge">${tierLabel[(card.tier || '').toLowerCase()] || card.tier}</span>
         ${card.chapter ? `<span class="card-chapter">${card.chapter}</span>` : ''}
       </div>
       <div class="card-body">

@@ -4,7 +4,7 @@
     "company": "T.M Link",
     "role": "대표",
     "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EC%86%A1%EC%8A%B9%ED%9B%88/",
-    "tier": "PREMIUM",
+    "tier": "premium",
     "category": "개발",
     "chapter": "BNI 파이오니어"
   },
@@ -35,12 +35,12 @@
     "category": "뷰티",
     "chapter": "BNI 파이오니어"
   },
-    {
+  {
     "name": "박영심",
     "company": "크로스컬러디자인연구소",
     "role": "대표",
     "url": "https://jinjjabg-hub.github.io/bni-giants/%EB%B0%95%EC%98%81%EC%8B%AC/index.html",
-    "tier": "PREMIUM",
+    "tier": "premium",
     "category": "디자인",
     "chapter": "BNI 자이언츠"
   },
@@ -85,7 +85,7 @@
     "company": "",
     "role": "",
     "url": "https://jinjjabg-hub.github.io/NAMECARD/%EA%B9%80%EC%A0%95%EC%9E%84/",
-    "tier": "PREMIUM",
+    "tier": "premium",
     "category": "건강",
     "chapter": "기타"
   },
@@ -115,5 +115,5 @@
     "tier": "standard",
     "category": "헬스",
     "chapter": "기타"
-  },
+  }
 ]
