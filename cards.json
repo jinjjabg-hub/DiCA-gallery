@@ -101,7 +101,7 @@
   {
     "name": "이지수",
     "company": "",
-    "role": "",
+    "role": "대표",
     "url": "https://jinjjabg-hub.github.io/NAMECARD/%EC%9D%B4%EC%A7%80%EC%88%98/",
     "tier": "standard",
     "category": "제조",
@@ -116,4 +116,14 @@
     "category": "헬스",
     "chapter": "기타"
   }
+    {
+    "name": "전광일",
+    "company": "부경 행정사 사무소",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/NAMECARD/%EC%A0%84%EA%B4%91%EC%9D%BC/",
+    "tier": "standard",
+    "category": "행정",
+    "chapter": "기타"
+  },
+  {
 ]
