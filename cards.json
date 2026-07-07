@@ -115,8 +115,8 @@
     "tier": "standard",
     "category": "헬스",
     "chapter": "기타"
-  }
-    {
+  },
+  {
     "name": "전광일",
     "company": "부경 행정사 사무소",
     "role": "대표",
@@ -124,6 +124,5 @@
     "tier": "standard",
     "category": "행정",
     "chapter": "기타"
-  },
-  {
+  }
 ]
