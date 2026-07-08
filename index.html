@@ -171,6 +171,29 @@ header {
 }
 .card-link-icon { color: var(--muted); font-size: 18px; transition: color 0.2s; }
 .dica-card:hover .card-link-icon { color: var(--gold); }
+.card-actions { display: flex; align-items: center; gap: 6px; }
+.card-share-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--muted); cursor: pointer; transition: all 0.2s;
+}
+.card-share-btn:hover { border-color: #FEE500; color: #FEE500; background: rgba(254,229,0,0.08); }
+.card-share-btn .material-symbols-outlined { font-size: 16px; }
+
+/* TOAST */
+#toast {
+  position: fixed; bottom: 32px; left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #FEE500; color: #191919;
+  font-size: 13px; font-weight: 600;
+  padding: 12px 24px; border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  opacity: 0; pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.23,1,0.32,1);
+  z-index: 100;
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
 /* EMPTY */
 .empty-state {
@@ -278,6 +301,9 @@ footer a { color: var(--gold); text-decoration: none; font-size: 12px; }
 <!-- GRID -->
 <div class="gallery-grid" id="gallery-grid"></div>
 
+<!-- TOAST -->
+<div id="toast"></div>
+
 <!-- FOOTER -->
 <footer>
   <a class="logo" href="https://jinjjabg-hub.github.io/TM-LINK/">◆ TM LINK</a>
@@ -354,7 +380,12 @@ function render() {
         <div class="card-company">${card.company}</div>
         <div class="card-footer">
           <span class="card-category">${card.category}</span>
-          <span class="material-symbols-outlined card-link-icon">open_in_new</span>
+          <div class="card-actions">
+            <button class="card-share-btn" data-name="${card.name}" data-company="${card.company}" data-url="${card.url}" title="카톡으로 전달하기">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+            <span class="material-symbols-outlined card-link-icon">open_in_new</span>
+          </div>
         </div>
       </div>
     </a>
@@ -381,6 +412,38 @@ document.getElementById('search-input').addEventListener('input', e => {
   searchQuery = e.target.value;
   render();
 });
+
+// 카톡으로 전달하기 (공유 버튼)
+document.getElementById('gallery-grid').addEventListener('click', e => {
+  const btn = e.target.closest('.card-share-btn');
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+
+  const name = btn.dataset.name;
+  const company = btn.dataset.company;
+  const url = btn.dataset.url;
+  const text = `📇 ${name} | ${company}\n디지털 명함 확인하기 👇`;
+
+  if (navigator.share) {
+    navigator.share({ title: `${name} 디지털 명함`, text, url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(`${text}\n${url}`).then(() => {
+      showToast('링크 복사 완료! 카톡에 붙여넣기 하세요 💬');
+    }).catch(() => {
+      showToast('복사에 실패했습니다');
+    });
+  }
+});
+
+let toastTimer;
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
+}
 </script>
 </body>
 </html>
