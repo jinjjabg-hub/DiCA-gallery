@@ -181,6 +181,22 @@ header {
 .card-share-btn:hover { border-color: #FEE500; color: #FEE500; background: rgba(254,229,0,0.08); }
 .card-share-btn .material-symbols-outlined { font-size: 16px; }
 
+/* GALLERY SHARE BUTTON (header) */
+.gallery-share-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent;
+  border: 1px solid rgba(242,202,80,0.3);
+  color: var(--gold); font-size: 12px; font-weight: 600;
+  padding: 6px 14px; border-radius: 20px;
+  cursor: pointer; transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.gallery-share-btn:hover { background: rgba(242,202,80,0.1); border-color: var(--gold); }
+.gallery-share-btn .material-symbols-outlined { font-size: 16px; }
+@media (max-width: 480px) {
+  .gallery-share-btn span:not(.material-symbols-outlined) { display: none; }
+}
+
 /* TOAST */
 #toast {
   position: fixed; bottom: 32px; left: 50%;
@@ -257,10 +273,13 @@ footer a { color: var(--gold); text-decoration: none; font-size: 12px; }
 
 <!-- HEADER -->
 <header>
-  <a class="logo" href="https://jinjjabg-hub.github.io/TM-LINK/">◆ TM LINK</a>
+  <a class="logo" href="https://jinjjabg-hub.github.io/T.M-LINK/">◆ TM LINK</a>
   <div class="header-right">
     <span class="count-badge" id="count-badge">0 cards</span>
-    <a class="back-btn" href="https://jinjjabg-hub.github.io/TM-LINK/">
+    <button class="gallery-share-btn" id="gallery-share-btn">
+      <span class="material-symbols-outlined">share</span><span>갤러리 공유</span>
+    </button>
+    <a class="back-btn" href="https://jinjjabg-hub.github.io/T.M-LINK/">
       <span class="material-symbols-outlined" style="font-size:18px;">arrow_back</span> 홈으로
     </a>
   </div>
@@ -306,9 +325,9 @@ footer a { color: var(--gold); text-decoration: none; font-size: 12px; }
 
 <!-- FOOTER -->
 <footer>
-  <a class="logo" href="https://jinjjabg-hub.github.io/TM-LINK/">◆ TM LINK</a>
+  <a class="logo" href="https://jinjjabg-hub.github.io/T.M-LINK/">◆ TM LINK</a>
   <p>© 2025 TM LINK · 송승훈 대표 · 디지털 명함 전문 제작</p>
-  <a href="https://jinjjabg-hub.github.io/TM-LINK/#cta">제작 의뢰하기 →</a>
+  <a href="https://jinjjabg-hub.github.io/T.M-LINK/#pricing">제작 의뢰하기 →</a>
 </footer>
 
 <script>
@@ -444,6 +463,22 @@ function showToast(msg) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
 }
+
+// 갤러리 전체 공유하기
+document.getElementById('gallery-share-btn').addEventListener('click', () => {
+  const url = 'https://jinjjabg-hub.github.io/DiCA-gallery/';
+  const text = 'TM LINK가 제작한 디지털 명함(DiCA) 모음 갤러리입니다 👇';
+
+  if (navigator.share) {
+    navigator.share({ title: 'DiCA Gallery | TM LINK', text, url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(`${text}\n${url}`).then(() => {
+      showToast('갤러리 링크 복사 완료! 카톡에 붙여넣기 하세요 💬');
+    }).catch(() => {
+      showToast('복사에 실패했습니다');
+    });
+  }
+});
 </script>
 </body>
 </html>
