@@ -124,5 +124,59 @@
     "tier": "standard",
     "category": "행정",
     "chapter": "기타"
+  },
+  {
+    "name": "김은지",
+    "company": "뷰티넥서스",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EA%B9%80%EC%9D%80%EC%A7%80/",
+    "tier": "standard",
+    "category": "뷰티",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "이정환",
+    "company": "천풍농원",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EC%9D%B4%EC%A0%95%ED%99%98/",
+    "tier": "standard",
+    "category": "농산물",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "방수근",
+    "company": "선향양초",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/%EB%B0%A9%EC%88%98%EA%B7%BC/",
+    "tier": "standard",
+    "category": "제조",
+    "chapter": "BNI 자이언츠"
+  },
+  {
+    "name": "이채홍",
+    "company": "검인 법무사사무소",
+    "role": "대표 법무사",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EC%9D%B4%EC%B1%84%ED%99%8D/",
+    "tier": "standard",
+    "category": "법률",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "박미성",
+    "company": "울림컴퍼니",
+    "role": "대표",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EB%B0%95%EB%AF%B8%EC%84%B1/",
+    "tier": "standard",
+    "category": "컨설팅",
+    "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "박진성",
+    "company": "㈜진성부동산중개법인",
+    "role": "대표이사",
+    "url": "https://jinjjabg-hub.github.io/BNI-PIONEER-cards/%EB%B0%95%EC%A7%84%EC%84%B1/",
+    "tier": "standard",
+    "category": "부동산",
+    "chapter": "BNI 파이오니어"
   }
 ]
