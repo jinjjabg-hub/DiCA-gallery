@@ -178,5 +178,14 @@
     "tier": "standard",
     "category": "부동산",
     "chapter": "BNI 파이오니어"
+  },
+  {
+    "name": "우완용",
+    "company": "해밀 한의원",
+    "role": "대표이사",
+    "url": "https://jinjjabg-hub.github.io/bni-giants/우완용/",
+    "tier": "standard",
+    "category": "한의원,제조",
+    "chapter": "BNI 자이언츠"
   }
 ]
